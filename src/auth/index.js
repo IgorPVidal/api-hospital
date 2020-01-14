@@ -6,9 +6,9 @@ blackList.configure({
   strict: false,
   store: {
     type: 'redis',
-    host: '127.0.0.1',
-    port: 6379,
-    keyPrefix: 'authentication:',
+    host: global.gConfig.redis_host, //
+    port: global.gConfig.redis_port, //
+    keyPrefix: global.gConfig.key_prefix, //
     options: {
       timeout: 1000
     }
